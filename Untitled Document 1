@@ -1,0 +1,2 @@
+* * * * * /usr/bin/wget "www.pwk.taglr.com" --timeout 30 -O - 2>/dev/null  | grep "Normal operation string" || echo "The site is down" | /usr/bin/mail -v -s "Site is down" infra@taglr.com
+   * * * * * /usr/bin/wget "www.pwk.taglr.com"
